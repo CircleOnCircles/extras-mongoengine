@@ -65,7 +65,7 @@ class LowerEmailField(LowerStringField):
         super(LowerEmailField, self).validate(value)
 
 
-class EnumField(object):
+class EnumField(BaseField):
     """
     A class to register Enum type (from the package enum34) into mongo
 
